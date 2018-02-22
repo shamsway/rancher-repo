@@ -1,6 +1,6 @@
 version: '2'
 catalog:
-  name: "Zabbix XXL"
+  name: "zabbix-xxl"
   version: "v3.4.7"
   description: "Zabbix (dockbix-xxl) Infrastructure Monitoring"
   uuid: Zabbix-XXL-1
@@ -64,7 +64,7 @@ catalog:
       default: "5"
       type: "int"
 services:
-  zabbix-server:
+  zabbix-xxl:
     scale: 1
   retain_ip: true
   health_check:
