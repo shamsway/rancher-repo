@@ -14,18 +14,18 @@ catalog:
       type: "int"
     - variable: server_port
       description: "Server port for Zabbix to recieve data"
-      label: "Public Port"
+      label: "Server Port"
       required: true
       default: "10051"
       type: "int"
     - variable: db_server
-      description: "Zabbix database server"
-      label: "Zabbix database server name/IP"
+      description: "Zabbix database server name/IP"
+      label: "Zabbix database server"
       required: true
       type: "string"
     - variable: db_user
       description: "Zabbix database username"
-      label: "Zabbix database user"
+      label: "Zabbix database username"
       required: true
       type: "string"
     - variable: db_password
