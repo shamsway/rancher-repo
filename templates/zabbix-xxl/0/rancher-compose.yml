@@ -1,0 +1,68 @@
+version: '2'
+catalog:
+  name: "Zabbix XXL"
+  version: "v3.4.7"
+  description: "Zabbix (dockbix-xxl) Infrastructure Monitoring"
+  uuid: Zabbix-XXL-1
+  minimum_rancher_version: v0.51.0
+  questions:
+    - variable: public_port
+      description: "Public port to access the Zabbix"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+    - variable: server_port
+      description: "Server port for Zabbix to recieve data"
+      label: "Public Port"
+      required: true
+      default: "10051"
+      type: "int"
+    - variable: db_server
+      description: "Zabbix database server"
+      label: "Zabbix database server name/IP"
+      required: true
+      type: "string"
+    - variable: db_user
+      description: "Zabbix database username"
+      label: "Zabbix database user"
+      required: true
+      type: "string"
+    - variable: db_password
+      description: "Database user password"
+      label: "Database user password"
+      required: true
+      type: "string"
+    - variable: db_name
+      description: "Database name"
+      label: "Database name - change to match customer database, if needed" 
+      required: true
+      default: "zabbix_customer"
+      type: "string"
+    - variable: value_cache_size
+      description: "Zabbix value cache size"
+      label: "Zabbix value cache size in megabytes"
+      required: true
+      default: "128"
+      type: "int"
+    - variable: pingers
+      description: "Number of pingers to start"
+      label: "Number of pingers to start"
+      required: true
+      default: "5"
+      type: "int"
+    - variable: pollers
+      description: "Number of pollers to start"
+      label: "Number of pollers to start"
+      required: true
+      default: "5"
+      type: "int"
+    - variable: trappers
+      description: "Number of trappers to start"
+      label: "Number of trappers to start"
+      required: true
+      default: "5"
+      type: "int"
+services:
+  zabbix-server:
+    scale: 1
