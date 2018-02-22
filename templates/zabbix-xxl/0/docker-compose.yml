@@ -15,5 +15,5 @@ services:
       - ZS_ValueCacheSize=${value_cache_size}M
       - ZS_StartPingers=${pingers}
       - ZS_StartPollers=${pollers}
-      - ZS_StartPollers=${pollers}
+      - ZS_StartTrappers=${pollers}
       - XXL_searcher=false
