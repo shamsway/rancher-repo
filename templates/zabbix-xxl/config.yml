@@ -1,4 +1,4 @@
-name: Zabbix-XXL
+name: zabbix-xml
 description: |
   Zabbix Infrastructure Monitoring
 version: 3.4.7
