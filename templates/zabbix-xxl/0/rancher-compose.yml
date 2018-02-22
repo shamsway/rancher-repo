@@ -66,10 +66,10 @@ catalog:
 services:
   zabbix-xxl:
     scale: 1
-  health_check:
-    port: 80
-    interval: 30000
-    unhealthy_threshold: 3
-    strategy: recreate
-    response_timeout: 3000
-    healthy_threshold: 2
+    health_check:
+      port: 80
+      interval: 30000
+      unhealthy_threshold: 3
+      strategy: recreate
+      response_timeout: 3000
+      healthy_threshold: 2
