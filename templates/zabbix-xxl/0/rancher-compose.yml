@@ -1,7 +1,6 @@
 version: '2'
 catalog:
   name: "zabbix-xxl"
-  version: "v3.4.7"
   description: "Zabbix (dockbix-xxl) Infrastructure Monitoring"
   uuid: Zabbix-XXL-1
   minimum_rancher_version: v0.51.0
