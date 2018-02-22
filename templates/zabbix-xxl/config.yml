@@ -1,5 +1,6 @@
 name: Zabbix-XXL
-description: Zabbix Infrastructure Monitoring
+description: |
+  Zabbix Infrastructure Monitoring
 version: 0
 category: Monitoring
 maintainer: Matt Elliott
