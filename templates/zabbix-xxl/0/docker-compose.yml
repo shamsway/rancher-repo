@@ -10,7 +10,7 @@ services:
     environment:
       - ZS_DBHost=${db_server}
       - ZS_DBUser=${db_user}
-      - ZS_DBPassword=${db_user_password}
+      - ZS_DBPassword=${db_password}
       - ZS_DBName=${db_name}
       - ZS_ValueCacheSize=${value_cache_size}M
       - ZS_StartPingers=${pingers}
