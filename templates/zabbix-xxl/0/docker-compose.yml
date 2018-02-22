@@ -1,6 +1,6 @@
 version: '2'
 services:
-  zabbix-server:
+  zabbix-xxl:
     image: monitoringartist/dockbix-xxl:latest
     ports:
       - "${public_port}:80"
